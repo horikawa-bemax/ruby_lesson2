@@ -3,13 +3,13 @@ ary = line.split(" ")
 @m = ary[0].to_i
 @n = ary[1].to_i
 
-@sosu = [2,3,5,7,11,13,17,19,23,29,31,37,41,43,47]
+@sosu = [2,3,5,7,11,13,17,19,23,29,31,37,41,43,47,@m]
 
 # mより小さな、素数だけを使う。
 sum = 0
 @limit = 0
-while @limit < 15 and @sosu[@limit] < @m do
-	sum += sosu[@limit]
+while @sosu[@limit] < @m do
+	sum += @sosu[@limit]
 	@limit += 1
 end
 
